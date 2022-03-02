@@ -1,0 +1,65 @@
+/* Burnt Orange
+#E35A01
+Forest green
+#4C7C71
+Navy blue
+#2E4769
+Dark blue
+#1F262E
+Cream
+#FFF3D9 */
+body {
+  background-color: #1F262E;
+  color: #FFF3D9;
+  font-family: 'Assistant', sans-serif;
+}
+a {
+  color: #4C7C71;
+  text-decoration: none;
+}
+a:hover {
+  color: #E35A01;
+}
+main {
+  margin: 1rem 2rem;
+}
+h1, h2, h3, h4, h5 {
+  color:#4C7C71;
+}
+h1#title {
+  text-align: center;
+}
+#subtitle {
+  text-align: center;
+}
+#tribute-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+img#image {
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quote {
+  font-style: italic;
+  font-size: large;
+}
+.instagram-media{
+  margin: 0 auto !important;
+}
+@media only screen and (max-width: 900px) {
+  img#image {
+    width: 80vw;
+  }
+  #tribute-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
