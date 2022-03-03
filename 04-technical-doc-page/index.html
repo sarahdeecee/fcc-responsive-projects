@@ -21,43 +21,147 @@
     <header>
       Vue Documentation
     </header>
-    <a class="nav-link" href="#">Introduction</a>
-    <a class="nav-link" href="#">Creating and Application</a>
-    <a class="nav-link" href="#">Template Syntax</a>
-    <a class="nav-link" href="#">Computed Properties</a>
-    <a class="nav-link" href="#">Class and Style Bindings</a>
-    <a class="nav-link" href="#">Conditional Rendering</a>
-    <a class="nav-link" href="#">Reference</a>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Creating_an_Application">Creating an Application</a>
+    <a class="nav-link" href="#Template_Syntax">Template Syntax</a>
+    <a class="nav-link" href="#Computed_Properties">Computed Properties</a>
+    <a class="nav-link" href="#Conditional_Rendering">Conditional Rendering</a>
+    <a class="nav-link" href="#Reference">Reference</a>
   </nav>
   <main id="main-doc">
-    <h1>Main content</h1>
+    <h1>Vue Documentation</h1>
+
     <section class="main-section">
-      <h2 id="">Introduction</h2>
-      <p>Vue (pronounced /vjuː/, like <strong>view</strong>) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.</p>
+      <h2 id="#Introduction">Introduction</h2>
+      <article>
+        <h3>What is Vue?</h3>
+        <p>Vue (pronounced /vjuː/, like <strong>view</strong>) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.</p>
+        <h3>Prerequisites</h3>
+        <p>The rest of the documentation assumes basic familiarity with HTML, CSS and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics then come back! Prior experience with other frameworks helps, but is not required.</p>
+        <h3>The Progressive Framework</h3>
+        <p>Vue is a framework and ecosystem that covers most of the common features needed in frontend development. But the web is extremely diverse - the things we build on the web may vary drastically in form and scale. With that in mind, Vue is designed to be flexible and incrementally adoptable. Depending on your use case, Vue can be used in different ways:
+        <ul>
+          <li>Enhancing static HTML without a build step</li>
+          <li>Embedding as Web Components on any page</li>
+          <li>Single-Page Application (SPA)</li>
+          <li>Fullstack / Server-Side-Rendering (SSR)</li>
+          <li>JAMStack / Static-Site-Generation (SSG)</li>
+          <li>Targeting desktop, mobile, WebGL or even the terminal</li>
+          <li>If you find these concepts intimidating, don't worry! The tutorial and guide only require basic HTML and JavaScript knowledge, and you should be able to follow along without being an expert in any of these.</p></li>
+        </ul>
+      </article>
     </section>
+
     <section class="main-section">
-      <h2 id="">Creating and Application</h2>
-      <p></p>
+      <h2 id="#Creating_an_Application">Creating an Application</h2>
+      <article>
+        <p>Every Vue application starts by creating a new application instance with the createApp function.</p>
+        <div class="code">
+          <pre>
+    import { createApp } from 'vue'
+
+    const app = createApp({
+      /* root component options */
+    })
+          </pre>
+        </div>
+        <h3>The Root Component</h3>
+        <p>The object we are passing into createApp is in fact a component. Every app requires a "root component" that can contain other components as its children.</p>
+        <h3>Mounting the App</h3>
+        <p>An application instance won't render anything until its .mount() method is called. It expects a "container" argument, which can either be an actual DOM element or a selector string:
+        <div class="code">
+          <pre>&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</pre>
+        </div>
+        <div class="code">
+          <pre>app.mount('#app')</pre>
+        </div>
+        <p>The content of the app's root component will be rendered inside the container element. The container element itself is not considered part of the app.</p>
+        <p>The .mount() method should always be called after all app configurations and asset registrations are done. Also note that its return value, unlike the asset registration methods, is the root component instance instead of the application instance.</p>
+      </article>
     </section>
+
     <section class="main-section">
-      <h2 id="">Template Syntax</h2>
-      <p></p>
+      <h2 id="#Template_Syntax">Template Syntax</h2>
+      <article>
+        <p>Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue templates are syntactically valid HTML that can be parsed by spec-compliant browsers and HTML parsers.</p>
+        <p>Under the hood, Vue compiles the templates into highly-optimized JavaScript code. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.</p>
+        <p>If you are familiar with Virtual DOM concepts and prefer the raw power of JavaScript, you can also directly write render functions instead of templates, with optional JSX support. However, do note that they do not enjoy the same level of compile-time optimizations as templates.</p>
+        <h3>Text Interpolation</h3>
+        <p>The most basic form of data binding is text interpolation using the "Mustache" syntax (double curly braces):</p>
+        <div class="code">
+          <pre>&lt;span&gt;Message: {{ msg }}&lt;/span&gt;</pre>
+        </div>
+        <p>The mustache tag will be replaced with the value of the msg property from the corresponding component instance. It will also be updated whenever the msg property changes.</p>
+      </article>
     </section>
+
     <section class="main-section">
-      <h2 id="">Computed Propertie</h2>
-      <p></p>
+      <h2 id="#Computed_Properties">Computed Properties</h2>
+      <article>
+        <h3>Basic Example</h3>
+        <p>In-template expressions are very convenient, but they are meant for simple operations. Putting too much logic in your templates can make them bloated and hard to maintain. For example, if we have an object with a nested array:</p>
+        <div class="code">
+          <pre>const author = reactive({
+  name: 'John Doe',
+  books: [
+    'Vue 2 - Advanced Guide',
+    'Vue 3 - Basic Guide',
+    'Vue 4 - The Mystery'
+  ]
+})</pre>
+        </div>
+        <p>And we want to display different messages depending on if author already has some books or not:</p>
+        <div class="code">
+          <pre>&lt;p&gt;Has published books:&lt;/p&gt;
+&lt;span&gt;{{ author.books.length &gt; 0 ? 'Yes' : 'No' }}&lt;/span&gt;</pre>
+        </div>
+        <p>At this point, the template is getting a bit cluttered. We have to look at it for a second before realizing that it performs a calculation depending on author.books. More importantly, we probably don't want to repeat ourselves if we need to include this calculation in the template more than once.</p>
+        <p>That's why for complex logic that includes reactive data, it is recommended to use a computed property. Here's the same example, refactored:</p>
+        <div class="code">
+          <pre>&lt;script setup&gt;
+import { reactive, computed } from 'vue'
+
+const author = reactive({
+  name: 'John Doe',
+  books: [
+    'Vue 2 - Advanced Guide',
+    'Vue 3 - Basic Guide',
+    'Vue 4 - The Mystery'
+  ]
+})
+
+// a computed ref
+const publishedBooksMessage = computed(() =&gt; {
+  return author.books.length &gt; 0 ? 'Yes' : 'No'
+})
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;p&gt;Has published books:&lt;/p&gt;
+  &lt;span&gt;{{ publishedBooksMessage }}&lt;/span&gt;
+&lt;/template&gt;</pre>
+        </div>
+      </article>
     </section>
+
     <section class="main-section">
-      <h2 id="">Class and Style Bindings</h2>
-      <p></p>
+      <h2 id="#Conditional_Rendering">Conditional Rendering</h2>
+      <article>
+        <h3>v-if</h3>
+        <p>The directive v-if is used to conditionally render a block. The block will only be rendered if the directive's expression returns a truthy value.</p>
+        <h3>v-else</h3>
+        <p>You can use the v-else directive to indicate an "else block" for v-if.</p>
+        <p>A v-else element must immediately follow a v-if or a v-else-if element - otherwise it will not be recognized.</p>
+        <h3>v-else-if</h3>
+        <p>The v-else-if, as the name suggests, serves as an "else if block" for v-if. It can also be chained multiple times.</p>
+      </article>
     </section>
+
     <section class="main-section">
-      <h2 id="">Conditional Rendering</h2>
-      <p></p>
-    </section>
-    <section class="main-section">
-      <h2 id="">Reference</h2>
-      <p>All text was taken from the <a href="https://vuejs.org/guide/introduction.html" target="_blank">official Vue documentation page.</a></p>
+      <h2 id="#Reference">Reference</h2>
+      <article>
+        <p>All text was taken from the <a href="https://vuejs.org/guide/introduction.html" target="_blank">official Vue documentation page.</a></p>
+      </article>
     </section>
   </main>
 </body>
