@@ -1,10 +1,11 @@
 body {
   background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);  
-  color: rgb(206, 232, 240);
+  color: #394a7d;
   margin: 1rem 2rem;
   min-height: 100vh;
   font-family: 'Assistant', sans-serif;
+  font-weight: 700;
 }
 h1 {
   font-weight: 700;
@@ -20,6 +21,9 @@ a:hover {
   text-align: center;
   color: #27304a;
 }
+#description {
+    font-weight: 500;
+}
 #form-container {
   display: flex;
   justify-content: center;
@@ -28,13 +32,14 @@ form {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  background-color: #394a7d;
+  background-color: #E7F2F8;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .form-text {
   color: rgb(128, 151, 159);
+  font-weight: 500;
 }
 button.btn-primary {
   background-color: #8BC6EC;
@@ -48,9 +53,25 @@ button.btn-primary {
 }
 button.btn-primary:hover {
   background-color: #9599E2;
-  border: #EBEEE0 1px solid;
+  border: #27304a 1px solid;
   color: #27304a;
 }
 label {
   font-size: 1.2rem;
+}
+@media (max-width: 900px) {
+  form {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  form {
+    min-width: 840px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  form {
+    width: 60vw;
+    padding: 1rem 2vw;
+  }
 }
