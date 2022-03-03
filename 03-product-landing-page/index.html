@@ -36,13 +36,22 @@
     </header>
     <main>
       <!-- Video -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/IwvKe2HEwm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IwvKe2HEwm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" id="email" placeholder="Enter your email" required>
-
-        <input type="submit" id="submit" value="Submit">
-        
+      <form id="form" class="form-inline" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email address"
+              class="form-control"
+              required
+            />
+          </div>
+          <input id="submit" type="submit" value="Sign Up" class="btn btn-primary col-sm-2 " />
+        </div>
       </form>
     </main>
   </div>

@@ -53,3 +53,6 @@ main {
   background-color: #0B3954;
   min-height: 90vh;
 }
+form {
+  width: 60%;
+}
