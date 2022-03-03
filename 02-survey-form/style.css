@@ -1,0 +1,40 @@
+/*
+Navy blue
+#314E70
+Cyan
+#35D5D0
+Rosewater
+#EDAEC0
+Ivory
+#EBEEE0
+*/
+body {
+  background-color: #314E70;
+  color: #EBEEE0;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+a {
+  color: #EDAEC0;
+  text-decoration: none;
+}
+a:hover {
+  color: #35D5D0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+input, textarea, select, button {
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: #EDAEC0;
+  padding: 5px;
+  width: 80%;
+}
