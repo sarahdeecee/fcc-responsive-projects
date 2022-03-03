@@ -1,22 +1,16 @@
-/*
-Navy blue
-#314E70
-Cyan
-#35D5D0
-Rosewater
-#EDAEC0
-Ivory
-#EBEEE0
-*/
 body {
   background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);  
   color: rgb(206, 232, 240);
   margin: 1rem 2rem;
   min-height: 100vh;
+  font-family: 'Assistant', sans-serif;
+}
+h1 {
+  font-weight: 700;
 }
 a {
-  color: #EDAEC0;
+  color: #9599E2;
   text-decoration: none;
 }
 a:hover {
@@ -42,25 +36,20 @@ form {
 .form-text {
   color: rgb(128, 151, 159);
 }
-input, textarea, select, button {
-  /* border-radius: 5px;
-  border: none;
-  font-size: 1.5rem;
-  margin-bottom: 1rem; */
-}
 button.btn-primary {
-  background-color: #EDAEC0;
+  background-color: #de95e2;
   width: 80%;
-  border: #000 1px solid;
-  color: #000;
+  border: #27304a 1px solid;
+  color: #27304a;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
+  margin: 0 10%;
 }
 button.btn-primary:hover {
-  background-color: #314E70;
-  width: 80%;
+  background-color: #9599E2;
   border: #EBEEE0 1px solid;
+  color: #27304a;
 }
 label {
   font-size: 1.2rem;
