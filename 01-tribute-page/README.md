@@ -1,3 +1,4 @@
+# Project 2 - Build a Tribute Page
 ## Instructions
 Create a CodePen.io app that passes all tests and fulfills the listed user stories.
 ## User Stories
