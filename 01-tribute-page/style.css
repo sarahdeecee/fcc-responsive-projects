@@ -1,17 +1,10 @@
-/* Burnt Orange
-#E35A01
-Forest green
-#4C7C71
-Navy blue
-#2E4769
-Dark blue
-#1F262E
-Cream
-#FFF3D9 */
 body {
-  background-color: #1F262E;
+  background-color: #1a1e22;
   color: #FFF3D9;
   font-family: 'Assistant', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 a {
   color: #4C7C71;
@@ -21,10 +14,16 @@ a:hover {
   color: #E35A01;
 }
 main {
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  max-width: 1600px;
+  background-color: #1F262E;
+  min-height: 100vh;
 }
 h1, h2, h3, h4, h5 {
   color:#4C7C71;
+}
+p {
+  font-size: 1.2rem;
 }
 h1#title {
   text-align: center;
@@ -35,9 +34,11 @@ h1#title {
 #tribute-section {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 img#image {
   width: 50vw;
+  max-width: 800px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -47,19 +48,31 @@ img#image {
   justify-content: center;
   align-items: center;
 }
+#img-caption {
+  padding-top: 1rem;
+}
 #quote {
   font-style: italic;
-  font-size: large;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .instagram-media{
   margin: 0 auto !important;
 }
 @media only screen and (max-width: 900px) {
+  main {
+    padding: 1rem;
+  }
   img#image {
     width: 80vw;
   }
   #tribute-section {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 640px) {
+  img#image {
+    width: 100%;
   }
 }
