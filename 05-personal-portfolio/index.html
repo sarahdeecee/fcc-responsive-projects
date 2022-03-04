@@ -19,17 +19,38 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-</head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+  <script>
+    $('body').scrollspy({
+      target: '#navbar'
+    });
+  </script>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sarah Dela Cruz</a>
+    <ul class="nav nav-pills" id="navbar-links">
+      <li class="nav-item">
+        <a class="nav-link" href="#welcome-section">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#projects">all</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#one">one</a>
+          <a class="dropdown-item" href="#two">two</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#links">Links</a>
+      </li>
+    </ul>
+  </nav>
   <main>
-    <nav id="navbar">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-    </nav>
     <section class="page" id="welcome-section">
       <h1>Welcome</h1>
     </section>
+    <!-- Projects -->
     <section class="page" id="projects">
       <div class="row">
         <div class="col-sm-6">
@@ -66,9 +87,13 @@
         </div>
       </div>
     </section>
+    <!-- Social Links -->
     <section class="page" id="links">
       <a href="https://github.com/sarahdeecee" target="_blank" id="profile-link">GitHub</a>
     </section>
   </main>
+  <footer>
+    Footer
+  </footer>
 </body>
 </html>
