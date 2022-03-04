@@ -69,3 +69,31 @@ pre {
   font-size: xx-large;
   color: #02894B;
 }
+
+@media only screen and (max-width: 900px) {
+  #navbar-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    height: auto;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #logo {
+    display: none;
+  }
+  #main-doc {
+    width: auto;
+    margin-left: 0px;
+  }
+  #navbar {
+    width: 100%;
+    text-align: center;
+  }
+  .list-group-item-light {
+    display: none;
+  }
+}
