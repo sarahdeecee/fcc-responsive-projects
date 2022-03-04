@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #D7D7D7;
+}
+h1 {
+  color: #20323E;
+}
+h2, h3 {
+  color: #02894B;
+}
+#page-containter {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+#navbar {
+  width: 300px;
+  position: fixed;
+  padding-right: 1rem;
+  height: 100vh;
+}
+#main-doc {
+  width: auto;
+  margin-left: 300px;
+}
+.list-group-item.active {
+  background-color: #02894B;
+}
+pre {
+  background-color: #B6C59A;
+  color: #20323E;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
