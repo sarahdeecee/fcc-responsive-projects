@@ -1,0 +1,28 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  background-color: #EFF1DB;
+  width: 100%;
+  z-index: 2;
+}
+
+.page {
+  height: 100vh;
+}
+#welcome-section {
+  background-color: #BBE7FE;
+  padding-top: 8vh;
+}
+#projects {
+  /* background-color: #FFD4DB; */
+  background-image: linear-gradient(to bottom, #BBE7FE 0%, #FFD4DB 100%);
+}
+#links {
+  /* background-color: #D3B5E5; */
+  background-image: linear-gradient(to bottom, #FFD4DB 0%, #D3B5E5 100%);
+}
+
+@media only screen and (max-width: 900px) {
+  
+}
