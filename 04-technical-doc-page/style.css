@@ -7,11 +7,8 @@ body {
 h1 {
   color: #20323E;
 }
-h2, h3 {
+h2, h3, h4, h5 {
   color: #02894B;
-}
-h1, h2, h3, h4, h5 {
-  width: 95%;
 }
 a {
   color: #02894B;
@@ -26,7 +23,7 @@ a:hover {
   overflow-y: scroll;
   position: relative;
 }
-#navbar {
+#navbar-container {
   width: 300px;
   position: fixed;
   padding: 0 1rem 2rem 0;
@@ -36,6 +33,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-y: scroll;
 }
 #main-doc {
   width: auto;
@@ -44,6 +42,7 @@ a:hover {
 .list-group-item.active {
   background-color: #02894B;
   border-color: #02894B;
+  color: #fff;
 }
 .list-group {
   border-radius: 5px;
@@ -65,4 +64,8 @@ pre {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: xx-large;
+  color: #02894B;
 }

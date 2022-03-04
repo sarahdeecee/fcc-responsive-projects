@@ -26,48 +26,48 @@
     });
   </script>
   <div id="page-container">
-    <div id="navbar">
-      <nav class="navbar navbar-light list-group">
-        <a class="nav-link list-group-item list-group-item-action" href="#title">
-        <h5>Vue Documentation</h5>
+    <div id="navbar-container">
+      <nav id="navbar" class="navbar navbar-light list-group">
+        <a class="list-group-item list-group-item-action" href="#title">
+        <header>Vue Documentation</header>
         </a>
 
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Introduction">Introduction</a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#What_is_Vue">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#What_is_Vue">
           <li>What is Vue?</li>
         </a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Prerequisites">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#Prerequisites">
           <li>Prerequisites</li>
         </a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Progressive_Framework">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#The_Progressive_Framework">
           <li>The Progressive Framework</li>
         </a>
 
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Creating_an_Application">Creating an Application</a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Root_Component">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#The_Root_Component">
           <li>The Root Component</li>
         </a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Mounting_the_App">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#Mounting_the_App">
           <li>Mounting the App</li>
         </a>
 
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Template_Syntax">Template Syntax</a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Text_Interpolation">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#Text_Interpolation">
           <li>Text Interpolation</li>
         </a>
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Computed_Properties">Computed Properties</a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Basic_Example">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#Basic_Example">
           <li>Basic Example</li>
         </a>
 
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Conditional_Rendering">Conditional Rendering</a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-if">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#v-if">
           <li>v-if</li>
         </a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#v-else">
           <li>v-else</li>
         </a>
-        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else-if">
+        <a class="nav-item list-group-item list-group-item-light list-group-item-action" href="#v-else-if">
           <li>v-else-if</li>
         </a>
         <a class="nav-item nav-link list-group-item list-group-item-action" href="#Reference">Reference</a>
@@ -78,12 +78,12 @@
       <h1 id="title">Vue Documentation</h1>
 
       <section class="main-section" id="Introduction">
-        <div class="section-header">
-          <h2>Introduction</h2>
+        <header class="section-header">
+          Introduction
           <a href="#">
             <i class="fa-solid fa-angle-up"></i>
           </a>
-        </div>
+          </header>
         <article>
           <h3 id="What_is_Vue">What is Vue?</h3>
           <p>Vue (pronounced /vjuː/, like <strong>view</strong>) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS and JavaScript, and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be it simple or complex.</p>
@@ -103,13 +103,13 @@
         </article>
       </section>
 
-      <section class="main-section">
-        <div class="section-header">
-        <h2 id="Creating_an_Application">Creating an Application</h2>
-        <a href="#">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-        </div>
+      <section class="main-section" id="Creating_an_Application">
+        <header class="section-header">
+          Creating an Application
+          <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </header>
         <article>
           <p>Every Vue application starts by creating a new application instance with the createApp function.</p>
           <code><pre>import { createApp } from 'vue'
@@ -133,13 +133,13 @@ const app = createApp({
         </article>
       </section>
 
-      <section class="main-section">
-        <div class="section-header">
-        <h2 id="Template_Syntax">Template Syntax</h2>
-        <a href="#">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-        </div>
+      <section class="main-section" id="Template_Syntax">
+        <header class="section-header">
+          Template Syntax
+          <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </header>
         <article>
           <p>Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue templates are syntactically valid HTML that can be parsed by spec-compliant browsers and HTML parsers.</p>
           <p>Under the hood, Vue compiles the templates into highly-optimized JavaScript code. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.</p>
@@ -153,13 +153,13 @@ const app = createApp({
         </article>
       </section>
 
-      <section class="main-section">
-        <div class="section-header">
-        <h2 id="Computed_Properties">Computed Properties</h2>
-        <a href="#">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-        </div>
+      <section class="main-section" id="Computed_Properties">
+        <header class="section-header">
+          Computed Properties
+          <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </header>
         <article>
           <h3 id="Basic_Example">Basic Example</h3>
           <p>In-template expressions are very convenient, but they are meant for simple operations. Putting too much logic in your templates can make them bloated and hard to maintain. For example, if we have an object with a nested array:</p>
@@ -207,13 +207,13 @@ const app = createApp({
         </article>
       </section>
 
-      <section class="main-section">
-        <div class="section-header">
-        <h2 id="Conditional_Rendering">Conditional Rendering</h2>
-        <a href="#">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-        </div>
+      <section class="main-section" id="Conditional_Rendering">
+        <header class="section-header">
+          Conditional Rendering
+          <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </header>
         <article>
           <h3 id="v-if">v-if</h3>
           <p>The directive v-if is used to conditionally render a block. The block will only be rendered if the directive's expression returns a truthy value.</p>
@@ -225,13 +225,13 @@ const app = createApp({
         </article>
       </section>
 
-      <section class="main-section">
-        <div class="section-header">
-        <h2 id="Reference">Reference</h2>
-        <a href="#">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-        </div>
+      <section class="main-section" id="Reference">
+        <header class="section-header">
+          Reference
+          <a href="#">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </header>
         <article>
           <p>All text was taken from the <a href="https://vuejs.org/guide/introduction.html" target="_blank">official Vue documentation page.</a></p>
         </article>
