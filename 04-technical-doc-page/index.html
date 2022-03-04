@@ -26,51 +26,54 @@
     });
   </script>
   <div id="page-container">
-    <nav id="navbar" class="navbar navbar-light list-group">
-      <a class="nav-link list-group-item list-group-item-action" href="#title">
+    <div id="navbar">
+      <nav class="navbar navbar-light list-group">
+        <a class="nav-link list-group-item list-group-item-action" href="#title">
         <h5>Vue Documentation</h5>
-      </a>
+        </a>
 
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Introduction">Introduction</a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#What_is_Vue">
-        <li>What is Vue?</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Prerequisites">
-        <li>Prerequisites</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Progressive_Framework">
-        <li>The Progressive Framework</li>
-      </a>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Introduction">Introduction</a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#What_is_Vue">
+          <li>What is Vue?</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Prerequisites">
+          <li>Prerequisites</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Progressive_Framework">
+          <li>The Progressive Framework</li>
+        </a>
 
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Creating_an_Application">Creating an Application</a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Root_Component">
-        <li>The Root Component</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Mounting_the_App">
-        <li>Mounting the App</li>
-      </a>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Creating_an_Application">Creating an Application</a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#The_Root_Component">
+          <li>The Root Component</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Mounting_the_App">
+          <li>Mounting the App</li>
+        </a>
 
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Template_Syntax">Template Syntax</a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Text_Interpolation">
-        <li>Text Interpolation</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Computed_Properties">Computed Properties</a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Basic_Example">
-        <li>Basic Example</li>
-      </a>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Template_Syntax">Template Syntax</a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Text_Interpolation">
+          <li>Text Interpolation</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Computed_Properties">Computed Properties</a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#Basic_Example">
+          <li>Basic Example</li>
+        </a>
 
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Conditional_Rendering">Conditional Rendering</a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-if">
-        <li>v-if</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else">
-        <li>v-else</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else-if">
-        <li>v-else-if</li>
-      </a>
-      <a class="nav-item nav-link list-group-item list-group-item-action" href="#Reference">Reference</a>
-    </nav>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Conditional_Rendering">Conditional Rendering</a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-if">
+          <li>v-if</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else">
+          <li>v-else</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-light list-group-item-action" href="#v-else-if">
+          <li>v-else-if</li>
+        </a>
+        <a class="nav-item nav-link list-group-item list-group-item-action" href="#Reference">Reference</a>
+      </nav>
+      <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg">
+    </div>
     <main id="main-doc">
       <h1 id="title">Vue Documentation</h1>
 
@@ -99,17 +102,16 @@
         <h2 id="Creating_an_Application">Creating an Application</h2>
         <article>
           <p>Every Vue application starts by creating a new application instance with the createApp function.</p>
-          <code><pre>
-      import { createApp } from 'vue'
+          <code><pre>import { createApp } from 'vue'
 
-      const app = createApp({
-        /* root component options */
-      })</pre>
+const app = createApp({
+  /* root component options */
+})</pre>
           </code>
           <h3 id="The_Root_Component">The Root Component</h3>
           <p>The object we are passing into createApp is in fact a component. Every app requires a "root component" that can contain other components as its children.</p>
           <h3 id="Mounting_the_App">Mounting the App</h3>
-          <p>An application instance won't render anything until its .mount() method is called. It expects a "container" argument, which can either be an actual DOM element or a selector string:
+          <p>An application instance won't render anything until its .mount() method is called. It expects a "container" argument, which can either be an actual DOM element or a selector string:</p>
           <code>
             <pre>&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</pre>
           </code>
@@ -175,12 +177,12 @@
   const publishedBooksMessage = computed(() =&gt; {
     return author.books.length &gt; 0 ? 'Yes' : 'No'
   })
-  &lt;/script&gt;
+&lt;/script&gt;
 
-  &lt;template&gt;
-    &lt;p&gt;Has published books:&lt;/p&gt;
-    &lt;span&gt;{{ publishedBooksMessage }}&lt;/span&gt;
-  &lt;/template&gt;</pre>
+&lt;template&gt;
+  &lt;p&gt;Has published books:&lt;/p&gt;
+  &lt;span&gt;{{ publishedBooksMessage }}&lt;/span&gt;
+&lt;/template&gt;</pre>
           </code>
         </article>
       </section>

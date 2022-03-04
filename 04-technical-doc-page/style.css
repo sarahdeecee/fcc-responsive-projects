@@ -20,8 +20,13 @@ h2, h3 {
 #navbar {
   width: 300px;
   position: fixed;
-  padding-right: 1rem;
+  padding: 0 1rem 2rem 0;
   height: 100vh;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 #main-doc {
   width: auto;
@@ -30,10 +35,18 @@ h2, h3 {
 .list-group-item.active {
   background-color: #02894B;
 }
+.list-group {
+  border-radius: 5px;
+}
 pre {
   background-color: #B6C59A;
   color: #20323E;
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
+}
+#logo {
+  width: 50%;
+  height: auto;
+  padding-top: 1rem;
 }
