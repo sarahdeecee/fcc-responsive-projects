@@ -30,7 +30,7 @@
     <a class="navbar-brand" href="#">Sarah Dela Cruz</a>
     <ul class="nav nav-pills" id="navbar-links">
       <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#about-section">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
@@ -62,40 +62,105 @@
       </div>
     </section>
     <!-- About -->
-    <section class="page" id="about">
-      <h2>Who is Sarah?</h2>
-      <p>
-        I'm passionate about user experience, efficient code, and making things make sense.
-      </p>
-      <p>
-        My interest in design and web development started at age 12 when I began learning HTML and CSS from free resources online. I created small websites for my favourite cartoon characters and made custom themes on MySpace.
-      </p>
-      <p>
-        After an adventurous 5 years working in Japan, I decided to return to Canada revisit my childhood hobby of designing websites.
-      </p>
-      <p><small>
-        Fun fact: My older brother gifted me a book titled <strong>How to Do Everything with HTML</strong> in the early 2000's &#8212; I still own to this day.
-      </small></p>
-      <p>Certifications:
-        <ul>
-          <li>
-            <strong>Diploma of Web Development</strong> from Lighthouse Labs
-          </li>
-          <li>
-            <strong>Responsive Web Design Certification</strong> from freeCodeCamp
-          </li>
-          <li>
-            <strong>JavaScript Algorithms and Data Structures Certification</strong> from freeCodeCamp
-          </li>
-        </ul>
-      </p>
+    <section class="page" id="about-section">
+      <div id="about">
+        <h2>About Me</h2>
+        <p>
+          My name is Sarah and I'm passionate about user experience, efficient code, and making things make sense.
+        </p>
+        <p>
+          My interest in design and web development started at age 12 when I started learning HTML and CSS from free resources online. I enjoyed creating small websites for my favourite cartoon characters and making custom themes on MySpace.
+        </p>
+        <p>
+          After an adventurous 5 years working in Japan, I decided to return to Canada revisit my childhood hobby of designing websites and pursue web development as a career.
+        </p>
+        <p><small>
+          Fun fact: My older brother gifted me a book titled <strong>How to Do Everything with HTML</strong> in the early 2000's &#8212; I still own to this day.
+        </small></p>
+        <p>Certifications:
+          <ul>
+            <li>
+              <strong>Diploma of Web Development</strong> from Lighthouse Labs
+            </li>
+            <li>
+              <strong>Responsive Web Design Certification</strong> from freeCodeCamp
+            </li>
+            <li>
+              <strong>JavaScript Algorithms and Data Structures Certification</strong> from freeCodeCamp
+            </li>
+          </ul>
+        </p>
+      </div>
     </section>
     <!-- Skills -->
     <section class="page" id="skills">
-      
+      <h2>Tech Stack</h2>
+      <div id="logo-container">
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="HTML">
+          <img src="./data/html-5.svg" class="stack-logo" />
+          HTML-5
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/css-3.svg" class="stack-logo" />
+          CSS-3
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="JavaScript">
+          <img src="./data/javascript.svg" class="stack-logo" />
+          JavaScript
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/ruby.svg" class="stack-logo" />
+          Ruby
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/nodejs-icon.svg" class="stack-logo" />
+          Node JS
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/react.svg" class="stack-logo" />
+          React
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/rails.svg" class="stack-logo" />
+          Rails
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/postgresql.svg" class="stack-logo" />
+          Postgres
+        </span>
+        <span class="logo-box">
+          <img src="./data/git-icon.svg" class="stack-logo" data-toggle="tooltip" data-placement="top" title="Git" />
+          Git
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/sass.svg" class="stack-logo" />
+          Sass
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/bootstrap.svg" class="stack-logo" />
+          Bootstrap
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/material-ui.svg" class="stack-logo" />
+          Material UI
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/cypress.svg" class="stack-logo" />
+          Cypress
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/jest.svg" class="stack-logo" />
+          Jest
+        </span>
+        <span class="logo-box" data-toggle="tooltip" data-placement="top" title="">
+          <img src="./data/storybook-icon.svg" class="stack-logo" />
+          Storybook
+        </span>
+      </div>
     </section>
     <!-- Projects -->
     <section class="page" id="projects">
+      <h2>Projects</h2>
       <div class="row">
         <div class="col-sm-6">
           <div class="card mb-4">
@@ -133,6 +198,7 @@
     </section>
     <!-- Social Links -->
     <section class="page" id="links">
+      <h2>Let's get in touch!</h2>
       <div id="links-container">
         <span class="link">
           <a href="https://www.linkedin.com/in/sarah-delacruz/" target="_blank">
@@ -174,7 +240,7 @@
     </section>
   </main>
   <footer id="footer-nav">
-    Designed and coded by Sarah Dela Cruz
+    Designed and coded by <strong>Sarah Dela Cruz</strong> for <strong>freeCodeCamp</strong> using <strong>HTML, CSS & Bootstrap</strong>
   </footer>
 </body>
 </html>
