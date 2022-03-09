@@ -26,8 +26,6 @@ p {
   font-size: 1.5rem;
 }
 #nav-name {
-  /* color: #871429; */
-  /* background: linear-gradient(135deg, #ae5ff9 0%, #3d8bff 100%); */
   background: linear-gradient(135deg, #d056ee 0%, #ae5ff9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,11 +63,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* animation-duration: 1s;
-  animation-name: slidein; */
 }
 #about {
-  /* background-color: #BBE7FE; */
   flex-direction: column;
 }
 #bio {
@@ -145,18 +140,6 @@ footer#footer-nav {
 #footer-nav > p {
   margin-bottom: 0;
   font-size: 1rem;
-}
-/* Animation */
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 /* Media queries */
