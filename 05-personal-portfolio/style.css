@@ -114,6 +114,10 @@ h2 {
 .project-tile {
   width: 32%;
   margin-bottom: 2rem;
+  color: #0d2f63;
+}
+.project-tile > p, .card-text {
+  font-size: 1rem;
 }
 #links {
   font-size: 3rem;
