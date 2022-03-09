@@ -2,7 +2,7 @@ body {
   position: relative;
   overflow-y: scroll;
   color: white;
-  background-image: linear-gradient(135deg, #feba67 0%, #d056ee 25%, #ae5ff9 50%, #3d8bff 100%);
+  background: linear-gradient(135deg, #feba67 0%, #d056ee 25%, #ae5ff9 50%, #3d8bff 100%);
   font-family: 'Lato', sans-serif;
 }
 a {
@@ -23,10 +23,14 @@ p {
   padding: 0 2rem;
   width: 100%;
   z-index: 2;
-  font-size: 3vh;
+  font-size: 1.5rem;
 }
 #nav-name {
-  color: #871429;
+  /* color: #871429; */
+  /* background: linear-gradient(135deg, #ae5ff9 0%, #3d8bff 100%); */
+  background: linear-gradient(135deg, #d056ee 0%, #ae5ff9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
 #navbar-links {
